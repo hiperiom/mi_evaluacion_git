@@ -21,7 +21,7 @@
     </header>
 
     <main class="card">
-        <h3>Este tema establece las bases. Antes de entender cómo funciona un proceso, los estudiantes deben saber qué es el SO y cómo se conecta con el hardware.</h3>
+        <h3>Definición, funciones, evolución histórica, kernel, interfaces y arquitecturas internas de los Sistemas Operativos</h3>
         
         <p>
             <strong>Estudiante:</strong> Luis Rubio (C.I: 32.104.668)<br>
@@ -29,16 +29,18 @@
         </p>
         <hr style="border: 1px solid #eee; margin-bottom: 20px;">
 
-        <p>[Escribe aquí la introducción a tu investigación...]</p>
+        <p><p>Un Sistema Operativo (SO) es el software fundamental que actúa como intermediario entre el hardware y los programas del usuario. Sus principales objetivos son la comodidad, la eficiencia y la capacidad de evolución. En esta investigación exploraremos la evolución histórica de los SO, el núcleo o kernel, los tipos de interfaz de usuario y las diferentes arquitecturas internas (monolítico, microkernel e híbrido).</p></p>
 
         <h4>Conceptos clave:</h4>
         <ul>
-            <li>[Punto importante 1...]</li>
-            <li>[Punto importante 2...]</li>
-            <li>[Punto importante 3...]</li>
+            <li>Gestión de procesos: Un proceso es un programa en ejecución. El SO se encarga de crear, planificar, pausar, reanudar y terminar procesos, resolviendo conflictos cuando múltiples procesos compiten por los mismos recursos.</li>
+            <li>Gestión de memoria: Controla qué partes de la RAM están ocupadas, asigna y libera memoria según los programas lo requieran, e implementa técnicas como la memoria virtual para simular más RAM de la que existe físicamente.</li>
+            <li>El Kernel (núcleo): Es el componente más fundamental del SO, el único software con acceso directo al hardware. Opera en modo kernel (privilegiado) mientras las aplicaciones corren en modo usuario (restringido), garantizando estabilidad y seguridad.</li>
+            <li>Llamadas al sistema (System Calls): Son el mecanismo mediante el cual los programas de usuario solicitan servicios al kernel. Ejemplos: open(), read(), write(), fork(), exec() - la única puerta de entrada autorizada al núcleo del SO.</li>
+            <li>Arquitecturas del kernel: Monolítico (todo en un bloque, alto rendimiento como Linux), Microkernel (solo lo esencial, alta estabilidad como QNX) e Híbrido (compromiso como Windows o macOS).</li>
         </ul>
 
-        <p>[Conclusión o resumen final de tu investigación...]</p>
+        <p><p>En conclusión, el Sistema Operativo es el puente fundamental entre el usuario y el hardware. Su evolución ha pasado de las tarjetas perforadas a los sistemas móviles y la nube. Su corazón, el kernel, opera en modo privilegiado gestionando recursos mediante interrupciones y system calls. Finalmente, su arquitectura interna —monolítica, microkernel o híbrida— define su equilibrio entre rendimiento, estabilidad y seguridad. No existe una arquitectura universalmente mejor; todo depende del caso de uso: un servidor web prefiere Linux (monolítico), un sistema de control de vuelo prefiere QNX (microkernel).</p></p>
 
         <!-- AQUI DEBE IR UN BOTON DE RETORNO AL INDEX PRINCIPAL -->
     </main>
