@@ -29,16 +29,17 @@
         </p>
         <hr style="border: 1px solid #eee; margin-bottom: 20px;">
 
-        <p>[Escribe aquí la introducción a tu investigación...]</p>
+        <p>La gestión de la memoria principal (RAM) es una de las funciones más críticas de un sistema operativo. Después de la CPU, la memoria es el recurso más limitado y disputado por los procesos activos. El SO debe decidir cómo asignar espacios de memoria a cada proceso, optimizando el rendimiento y evitando conflictos. En esta investigación se analizan los esquemas de asignación contigua y no contigua, los problemas de fragmentación y las técnicas de paginación, segmentación y memoria virtual.</p>
 
         <h4>Conceptos clave:</h4>
         <ul>
-            <li>[Punto importante 1...]</li>
-            <li>[Punto importante 2...]</li>
-            <li>[Punto importante 3...]</li>
+            <li><strong>Asignación contigua vs no contigua:</strong> La asignación contigua asigna un bloque único continuo (sencilla pero con fragmentación externa). La no contigua divide el proceso en varios bloques dispersos (mayor flexibilidad).</li>
+            <li><strong>Fragmentación interna, externa y compactación:</strong> Fragmentación interna (desperdicio dentro del bloque), externa (huecos pequeños no contiguos). Solución: compactación (reordenar la memoria para unir huecos).</li>
+            <li><strong>Paginación y segmentación:</strong> Paginación divide memoria en marcos y procesos en páginas del mismo tamaño (elimina fragmentación externa). Segmentación divide en segmentos lógicos de tamaño variable (permite compartir, pero genera fragmentación externa).</li>
+            <li><strong>Memoria virtual y algoritmos de reemplazo:</strong> La memoria virtual usa disco como extensión. Algoritmos: FIFO (reemplaza la página más antigua), LRU (reemplaza la menos usada recientemente).</li>
         </ul>
 
-        <p>[Conclusión o resumen final de tu investigación...]</p>
+        <p>La gestión eficiente de la memoria RAM es esencial para el rendimiento del sistema. Los sistemas operativos modernos combinan paginación con memoria virtual para ofrecer la ilusión de una memoria grande y privada a cada proceso. La elección del algoritmo de reemplazo (LRU frente a FIFO) afecta la tasa de aciertos y el rendimiento global. Comprender estos conceptos es fundamental para administrar sistemas operativos y desarrollar software eficiente.</p>
 
         <!-- AQUI DEBE IR UN BOTON DE RETORNO AL INDEX PRINCIPAL -->
     </main>
