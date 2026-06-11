@@ -29,16 +29,17 @@
         </p>
         <hr style="border: 1px solid #eee; margin-bottom: 20px;">
 
-        <p>[Escribe aquí la introducción a tu investigación...]</p>
+        <p><p>En el ámbito de la computación y los sistemas operativos, la concurrencia describe la capacidad de ejecutar múltiples tareas o hilos en intervalos de tiempo superpuestos. Cuando estos procesos paralelos compiten por acceder a un mismo recurso físico o lógico (como una posición de memoria o un archivo de sistema), se requiere un control estricto para evitar la inconsistencia de los datos. La sincronización surge como la solución indispensable, proveyendo las reglas y mecanismos necesarios para ordenar el acceso de los hilos y asegurar la estabilidad operativa del sistema.</p></p>
 
         <h4>Conceptos clave:</h4>
         <ul>
-            <li>[Punto importante 1...]</li>
-            <li>[Punto importante 2...]</li>
-            <li>[Punto importante 3...]</li>
+            <li><strong>Sincronización de Hilos:</strong> Es la coordinación del flujo de ejecución de procesos independientes para garantizar que no alteren el estado de los recursos comunes de forma simultánea ni caigan en conflictos de tiempo.</li>
+<li><strong>Bloqueo Mutuamente Excluyente (Mutex):</strong> Funciona como un semáforo binario o un cerrojo de software. El primer hilo en llegar adquiere el bloqueo, obligando a los demás hilos competidores a entrar en un estado de espera (cola de bloqueo) hasta que el recurso sea liberado de forma segura.</li>
+<li><strong>Sección Crítica:</strong> Segmento de código de un programa donde se realizan operaciones de lectura o escritura sobre un recurso compartido. Debe protegerse obligatoriamente con un mecanismo de exclusión mutua.</li>
+<li><strong>Inanición (Starvation):</strong> Situación anómala en la que un proceso legítimo es relegado indefinidamente por el planificador del sistema operativo, viéndose imposibilitado de adquirir el Mutex debido a que otros hilos con mayor prioridad acaparan constantemente el recurso.</li>
         </ul>
 
-        <p>[Conclusión o resumen final de tu investigación...]</p>
+       <p>En conclusión, el desarrollo de software multiproceso exige una comprensión profunda de la concurrencia y sus riesgos. El empleo estratégico de bloqueos mutuamente excluyentes (Mutex) es una de las soluciones más eficientes para blindar las secciones críticas y salvaguardar la integridad de la información. Una correcta política de sincronización previene fallos críticos como las condiciones de carrera y la inanición, permitiendo un rendimiento óptimo en arquitecturas modernas.</p>
 
         <!-- AQUI DEBE IR UN BOTON DE RETORNO AL INDEX PRINCIPAL -->
     </main>
